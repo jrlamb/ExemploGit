@@ -24,8 +24,10 @@ int main(int argc, char** argv) {
     
     fgets(senha, 20, stdin);
     senha[strcspn(senha, "\n")] = 0;    
+    printf("Digite o username: ");
     //printf("%d", strcmp(senha, "abacate"));    
     //if (senha == "abacate"){
+    
     if (strcmp(senha, "abacate") == 0){
         printf("Acesso autorizado");
     } else {
